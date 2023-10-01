@@ -1,0 +1,26 @@
+.users-list {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px auto;
+}
+
+.user-row {
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: 600;
+    list-style: none;
+    display: block;
+}
+
+.user-row:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+
+.list-container {
+    width: 100%;
+    padding: 0 32px;
+}
