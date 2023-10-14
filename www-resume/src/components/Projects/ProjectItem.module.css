@@ -1,0 +1,39 @@
+.gridWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 36px auto;
+}
+
+.list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 44px;
+    padding: 0;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 36px;
+}
+
+.listItem {
+    width: 200px;
+    height: 150px;
+    border: 2px solid red;
+    text-align: center;
+}
+
+.repoImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.link {
+    color: orange;
+}

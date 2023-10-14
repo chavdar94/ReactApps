@@ -1,0 +1,110 @@
+.navbar {
+    background-color: #1f2937;
+    padding: 12px 0;
+}
+
+.listItem {
+    list-style: none;
+    position: relative; /* Ensure relative positioning for the dropdown */
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    padding: 12px;
+    display: inline-block; /* Allow the link to have dimensions */
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Change to flex-end */
+    align-items: center;
+    margin: auto;
+    gap: 12px;
+}
+
+.link,
+.link:after,
+.link:before,
+.resumeBtn,
+.resumeBtn:after,
+.resumeBtn:before {
+    transition: all 0.5s;
+}
+
+/* stroke hover effect */
+.link:after,
+.resumeBtn:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+.link:hover:after,
+.resumeBtn:hover:after {
+    padding: 1px 0;
+    width: 100%;
+}
+
+/* Styles for the dropdown */
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -20%;
+    background-color: #364b69;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border: 2px solid #587297;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.listItem:hover .dropdownContent {
+    display: flex; /* Show the dropdown on hover */
+    flex-direction: column;
+    width: 140%;
+}
+
+/* Styles for the 'Show' button and 'Download' link inside the dropdown */
+.button {
+    padding: 6px 24px; /* Add padding to match the link's padding */
+    background-color: #364b69;
+    color: white;
+    border-radius: 20px;
+    margin: 6px 0;
+}
+
+.button:first-child,
+.dwLink {
+    border: 1px solid #aaa; /* Add a separator between options */
+    padding: 6px 24px; /* Add padding to match the link's padding */
+    margin-bottom: 6px;
+    background-color: #364b69;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover,
+.dwLink:hover {
+    background-color: #2c3e50; /* Change background color on hover */
+}
+
+.dwLink {
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 6px 0;
+}

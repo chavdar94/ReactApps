@@ -1,0 +1,28 @@
+.resume {
+    width: 50%;
+    margin: auto;
+    padding: 24px;
+}
+
+.resumeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.download {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: background-color 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.download:hover {
+    background-color: #7e98b3;
+}
